@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#ffe8f2">
+<title>A Little Surprise For My Bestie 💗</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600;700&family=Playfair+Display:wght@600;700&family=Caveat:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="ambient a"></div><div class="ambient b"></div><div id="confetti"></div>
+<main class="shell">
+<header><div class="brand">✿ little moments</div><div class="steps"><b id="step">01</b> ─ 08</div></header>
+
+<section class="scene active" id="s-lock">
+ <div class="eyebrow">A PRIVATE LITTLE WORLD</div><div class="lock-art"><span>♥</span></div>
+ <h1>A surprise is waiting<br><em>just for you.</em></h1>
+ <p>A tiny secret between best friends. Enter the secret code to open it.</p>
+ <form id="unlock"><input id="code" type="password" placeholder="Enter secret code" aria-label="Secret code"><button>Unlock my surprise ↗</button></form>
+ <small>Hint: the special date or our little code 😉</small><div class="error" id="error"></div>
+</section>
+
+<section class="scene" id="s-welcome">
+ <div class="eyebrow">TODAY IS ALL ABOUT YOU</div><div class="welcome-art"><div class="sun"></div><div class="mini-cake"><i></i></div><span>♥</span></div>
+ <div class="script">to my favourite human</div><h1>Happy Birthday,<br><em id="friend1">Bestie!</em></h1>
+ <p>Today deserves more than a simple “happy birthday”. So I made you a little journey. Ready?</p>
+ <button data-next="balloons">Let's celebrate ♡</button>
+</section>
+
+<section class="scene" id="s-balloons">
+ <div class="eyebrow">A LITTLE GAME BEFORE THE WISH</div><h1>Pop the balloons,<br><em>make a wish!</em></h1><p>Tap all four balloons to unlock your birthday wish.</p>
+ <div class="balloons"><button class="balloon pink" aria-label="Pop pink balloon"></button><button class="balloon lilac" aria-label="Pop lilac balloon"></button><button class="balloon peach" aria-label="Pop peach balloon"></button><button class="balloon rose" aria-label="Pop rose balloon"></button></div>
+ <div class="progress" id="balloon-progress">0 of 4 popped</div><button id="balloon-next" class="hidden">My wish is ready →</button>
+</section>
+
+<section class="scene" id="s-cake">
+ <div class="eyebrow">MAKE A WISH</div><h1>One candle,<br><em>a thousand wishes.</em></h1><p>Tap the flame to blow it out. Your wish is safe with me.</p>
+ <div class="cake"><button class="flame" id="flame" aria-label="Blow out candle"></button><div class="candle"></div><div class="icing"></div><div class="cakebody"></div><div class="plate"></div></div>
+ <div class="progress" id="candle-note">Your candle is waiting ✨</div><button id="cake-next" class="hidden">See your flowers →</button>
+</section>
+
+<section class="scene" id="s-flowers">
+ <div class="eyebrow">A BOUQUET FOR YOU</div><h1>Because you deserve<br><em>all the pretty things.</em></h1><p>A little bouquet that never fades. Sending you the biggest hug!</p>
+ <div class="bouquet"><i class="flower f1"></i><i class="flower f2"></i><i class="flower f3"></i><i class="flower f4"></i><i class="flower f5"></i><div class="stems"></div><div class="paper"></div><div class="bow"></div></div>
+ <button data-next="memories">Keep going ♡</button>
+</section>
+
+<section class="scene" id="s-memories">
+ <div class="eyebrow">OUR LITTLE TIME CAPSULE</div><h1>Some memories<br><em>deserve a replay.</em></h1><p>Add your photos in assets/photos and update the paths in script.js.</p>
+ <div class="memory"><div class="photo"><img id="photo" src="assets/photos/memory-1.jpg" alt="A favourite memory"><div id="placeholder">♡<b>Your memory goes here</b><small>assets/photos/memory-1.jpg</small></div></div><div class="caption"><small id="count">01 / 03</small><span id="caption">The little moments become the biggest memories.</span></div><div class="arrows"><button id="prev" aria-label="Previous photo">←</button><button id="next" aria-label="Next photo">→</button></div></div>
+ <button data-next="letter">There's a letter for you ✉</button>
+</section>
+
+<section class="scene" id="s-letter">
+ <div class="eyebrow">A NOTE FROM MY HEART</div><h1>Just a few words,<br><em>from me to you.</em></h1><p>Tap the envelope. This one's personal.</p>
+ <button class="envelope" id="envelope" aria-label="Open letter"><span>♥</span><b>For my bestie</b></button>
+ <article id="letter" class="letter hidden"><div class="script">Dear bestie,</div><p id="letter-text"></p><div class="signature">Your forever friend ♡</div></article>
+ <button id="letter-next" class="hidden">One last surprise →</button>
+</section>
+
+<section class="scene" id="s-gift">
+ <div class="eyebrow">THE FINAL LITTLE SURPRISE</div><h1>Wait… there's<br><em>one more thing!</em></h1><p>Tap the gift to open your final birthday surprise.</p>
+ <button class="gift" id="gift" aria-label="Open birthday gift"><i></i><b></b><span></span></button>
+ <article id="final" class="final hidden"><div>✦</div><h2>You're one of a kind.</h2><p>Keep shining, keep laughing and never forget how loved you are. Here's to another year of unforgettable memories!</p><strong>HAPPY BIRTHDAY, <span id="friend2">BESTIE</span>! ♡</strong></article>
+ <button class="replay hidden" id="replay">↻ Replay the surprise</button>
+</section>
+<footer>MADE WITH <span>♥</span> FOR A VERY SPECIAL FRIEND</footer>
+</main><script src="script.js"></script>
+</body></html>
